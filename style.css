@@ -1,0 +1,219 @@
+  .container{
+      display:grid;
+      width:80vw;
+      margin: auto;
+      grid-template-columns:50% 50%;
+      grid-template-rows:45vh 45vh;
+      grid-template-areas: 
+      "top top"
+      "bottomLeft bottomRight"
+      "bottomLeft1 bottomRight1"
+      "footer footer";
+      border: 2px solid lightgoldenrodyellow;
+/*      justify-content: center;*/
+       border-radius: 10px;
+
+  }
+  .box{
+    display: flex;
+/*    align-items: center;*/
+/*    justify-content:center;*/
+    border: 3px solid blue;
+    margin: 15px;
+    border-radius: 10px;
+    }
+  
+
+
+  #nestedGrid{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    border:3px solid purple;
+    text-align: left;
+    vertical-align: top;
+  }
+
+
+  .blogTitle{
+
+       text-align: right;
+       vertical-align: top;
+  }
+
+  .blogPost{
+       text-align: right;
+       vertical-align: top;
+  }
+
+  #nestedGrid1{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    border:3px solid green;
+    text-align: left;
+    vertical-align: top;
+  }
+
+
+
+
+
+
+  #one{
+    grid-area: top;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #two{
+    grid-area: bottomLeft;
+    background-image: url(stars.jpg);
+    background-size: contain;
+    background-repeat: repeat-y;
+  }
+
+  #three{
+    grid-area: bottomRight;
+    background-color: lightblue;
+
+  }
+
+  #four{
+    justify-content: center;
+    align-items: center;
+    grid-area:footer;
+  }
+
+   #five{
+    grid-area:missedItem;
+  }
+
+  #six{
+    display:none;
+  }
+
+
+ #seven{
+    grid-area: bottomLeft1;
+   
+  }
+
+  #eight{
+    grid-area: bottomRight1;
+    background-color: lightblue;
+
+  }
+
+
+
+
+@media(min-width:900px) {
+
+    .container{
+      display:grid;
+      width:80vw;
+      margin: auto;
+      grid-template-columns:33.3% 33.3% 33.3%;
+      grid-template-rows:45vh 45vh;
+      grid-template-areas: 
+      "top top top"
+      "bottomLeft bottomRight newItem"
+      "bottomLeft1 bottomRight1"
+      "footer footer footer";
+      border: 2px solid lightgoldenrodyellow;
+/*      justify-content: center;*/
+       border-radius: 10px;
+
+  }
+  .box{
+    display: flex;
+/*    align-items: center;*/
+/*    justify-content:center;*/
+    border: 3px solid blue;
+    margin: 15px;
+    border-radius: 10px;
+    }
+  
+
+
+  #nestedGrid{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    border:3px solid purple;
+    text-align: left;
+    vertical-align: top;
+  }
+
+
+
+
+  .blogTitle{
+       text-align: left;
+       vertical-align: top;
+  }
+   .blogPost{
+       text-align: left;
+       vertical-align: top;
+  }
+
+
+
+/*#nestedGrid > div {
+  background: lightgreen;
+  padding: 8px;
+}*/
+
+
+  #one{
+    grid-area: top;
+    justify-content: center;
+     align-items: center;
+
+    
+  }
+
+  #two{
+    grid-area: bottomLeft;
+    background-image: url(stars.jpg);
+    background-size: contain;
+    background-repeat: repeat-y;
+  }
+
+  
+
+  #four{
+    grid-area:footer;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #five{
+    grid-area:missedItem;
+  }
+
+
+  #three{
+    grid-area: bottomRight;
+    background-color: lightblue;
+
+  }
+
+  #six{
+    display: grid;
+    grid-area:newItem;
+  }
+
+
+
+
+ #seven{
+    grid-area: bottomLeft1;
+   
+  }
+
+  #eight{
+    grid-area: bottomRight1;
+    background-color: lightblue;
+
+  }
+
+}
